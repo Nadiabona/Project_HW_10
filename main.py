@@ -14,6 +14,9 @@ def page_main():
 
 @app.route('/candidate/<int:uid>')
 
+
+
+
 def page_candidate(uid):
     "Кандиданты по pk"
 
