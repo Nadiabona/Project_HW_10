@@ -1,6 +1,6 @@
 from flask import Flask
 
-from utils import load_candidates, format_candidates, get_all_candidates, get_candidate_by_pk, get_candidate_by_skill
+from utils import format_candidates, get_all_candidates, get_candidate_by_pk, get_candidate_by_skill
 
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ def page_candidate(uid):
     "Кандиданты по pk"
     candidate: dict = get_candidate_by_pk(uid)
     result = f'<img src = "{candidate["picture"]}">'
-    result+= format_candidates([candidate])
+    #result += format_candidates([candidate])
     return result
 
 

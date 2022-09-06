@@ -7,12 +7,11 @@ def load_candidates() -> list[dict]:
         candidates = json.load(file)
         return candidates
 
-def format_candidates(candidates: list[dict]) -> str:
-    "Форматирование списка кандидатов - передаем список, она нам создает отформатированный html"
-    candidates: list[dict] = load_candidates()
+def format_candidates(сandidates: list[dict]) -> str:
+    #Форматирование списка кандидатов - передаем список, она нам создает отформатированный html"
     result = '<pre>'
 
-    for candidate in candidates:
+    for candidate in сandidates:
         result += f"""
                 {candidate['name']} \n
                 {candidate['position']} \n
